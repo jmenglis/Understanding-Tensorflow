@@ -3,7 +3,7 @@ import matplotlib.image as mp_img
 import matplotlib.pyplot as plot
 import os
 
-filename = './GregHume_Dandelion.JPG'
+filename = './image1.jpg'
 
 image = mp_img.imread(filename)
 

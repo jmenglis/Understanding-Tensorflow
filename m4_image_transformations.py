@@ -3,10 +3,10 @@ import tensorflow as tf
 from PIL import Image
 
 original_image_list = [
-    './images/dog-cute-pet.jpg',
-    './images/pexels-photo-28452.jpg',
-    './images/black-and-white-branches-tree-high.jpg',
-    './images/lost-places-old-decay-ruin-162389.jpeg'
+    './image1.jpg',
+    './image2.jpg',
+    './image3.jpg',
+    './image4.jpg'
 ]
 
 # Make a que of file names including all the images specified
@@ -35,7 +35,7 @@ with tf.Session() as sess:
         image = tf.image.resize_images(image, [224, 224])
         image.set_shape((224, 224, 3))
 
-        iamge = tf.image.flip_up_down(image)
+        image = tf.image.flip_up_down(image)
         image = tf.image.central_crop(image, central_fraction=0.5)
 
         # Get an image tensor and print its value

@@ -3,10 +3,10 @@ import tensorflow as tf
 from PIL import Image
 
 original_image_list = [
-    './images/dog-cute-pet.jpg',
-    './images/pexels-photo-28452.jpg',
-    './images/black-and-white-branches-tree-high.jpg',
-    './images/lost-places-old-decay-ruin-162389.jpeg'
+    './image1.jpg',
+    './image2.jpg',
+    './image3.jpg',
+    './image4.jpg'
 ]
 
 # Make a que of file names including all the images specified
