@@ -60,7 +60,7 @@ with tf.Session() as sess:
     print(images_tensor)
 
     summary_writer = tf.summary.FileWriter('./m4_example3', graph=sess.graph)
-    summary_str = sess.run(tf.summary.image('images', images_tensor))
+    summary_str = sess.run(tf.summary.image('images', images_tensor, max_outputs=4))
     summary_writer.add_summary(summary_str)
 
     summary_writer.close()
